@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+
+<VBox prefHeight="424.0" prefWidth="989.0" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controllers.CustomersController">
+   <children>
+      <TableView fx:id="customerTable" prefHeight="395.0" prefWidth="952.0">
+         <columns>
+            <TableColumn prefWidth="75.0" text="Customer ID" fx:id="customerID"/>
+            <TableColumn prefWidth="139.0" text="Customer Name" fx:id="customerName"/>
+            <TableColumn prefWidth="101.0" text="Address" fx:id="address"   />
+            <TableColumn prefWidth="75.0" text="Postal Code" fx:id="postal" />
+            <TableColumn prefWidth="75.0" text="Phone" fx:id="phone" />
+            <TableColumn prefWidth="110.0" text="Created Date" fx:id="createdDate" />
+            <TableColumn prefWidth="82.0" text="Created_By" fx:id="createdBy" />
+            <TableColumn prefWidth="117.0" text="Last Updated" fx:id="updatedDate" />
+            <TableColumn prefWidth="121.0" text="Last Updated By" fx:id="updatedBy" />
+            <TableColumn prefWidth="75.0" text="Division ID" fx:id="divisionID" />
+
+         </columns></TableView>
+      
+
+      <HBox alignment="CENTER_LEFT" prefHeight="75.0" prefWidth="677.0" spacing="20.0">
+         <children>
+            <Button mnemonicParsing="false" text="ADD" onAction="#handleAdd" />
+            <Button mnemonicParsing="false" text="MODIFY" onAction="#handleModify" />
+            <Button mnemonicParsing="false" text="DELETE" onAction="#handleDelete" />
+         </children>
+         <padding>
+            <Insets left="35.0" />
+         </padding>
+      </HBox>
+   </children>
+   <padding>
+      <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+   </padding>
+</VBox>
